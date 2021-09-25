@@ -1,0 +1,15 @@
+C:\02-Pessoal\Algoritmos\bin\Debug\net6.0\Algoritmos.exe
+C:\02-Pessoal\Algoritmos\bin\Debug\net6.0\Algoritmos.deps.json
+C:\02-Pessoal\Algoritmos\bin\Debug\net6.0\Algoritmos.runtimeconfig.json
+C:\02-Pessoal\Algoritmos\bin\Debug\net6.0\Algoritmos.dll
+C:\02-Pessoal\Algoritmos\bin\Debug\net6.0\ref\Algoritmos.dll
+C:\02-Pessoal\Algoritmos\bin\Debug\net6.0\Algoritmos.pdb
+C:\02-Pessoal\Algoritmos\obj\Debug\net6.0\Algoritmos.csproj.AssemblyReference.cache
+C:\02-Pessoal\Algoritmos\obj\Debug\net6.0\Algoritmos.GeneratedMSBuildEditorConfig.editorconfig
+C:\02-Pessoal\Algoritmos\obj\Debug\net6.0\Algoritmos.AssemblyInfoInputs.cache
+C:\02-Pessoal\Algoritmos\obj\Debug\net6.0\Algoritmos.AssemblyInfo.cs
+C:\02-Pessoal\Algoritmos\obj\Debug\net6.0\Algoritmos.csproj.CoreCompileInputs.cache
+C:\02-Pessoal\Algoritmos\obj\Debug\net6.0\Algoritmos.dll
+C:\02-Pessoal\Algoritmos\obj\Debug\net6.0\ref\Algoritmos.dll
+C:\02-Pessoal\Algoritmos\obj\Debug\net6.0\Algoritmos.pdb
+C:\02-Pessoal\Algoritmos\obj\Debug\net6.0\Algoritmos.genruntimeconfig.cache
