@@ -1,3 +1,5 @@
 ﻿using Algoritmos;
 
-PesquisaBinaria.Executar();
+//PesquisaBinaria.Executar();
+
+FuncoesRecursivas.Executar();

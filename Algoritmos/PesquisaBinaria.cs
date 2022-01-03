@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Algoritmos
+﻿namespace Algoritmos
 {
     public class PesquisaBinaria
     {
         public static void Executar()
         {
             var arrayDeNumerosOrdenados = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            var numeroEscolhido = 10;
+            var numeroEscolhido = 5;
 
             var resultado = EncontrarElemento(arrayDeNumerosOrdenados, numeroEscolhido);
 
