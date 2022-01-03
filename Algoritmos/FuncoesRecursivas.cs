@@ -17,7 +17,6 @@
         private static int Fatorial(int x)
         {
             if (x == 1) return 1;
-
             return x * Fatorial(x - 1);
         }
 
