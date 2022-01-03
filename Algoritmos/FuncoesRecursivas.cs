@@ -28,6 +28,7 @@
                 return;
 
             Thread.Sleep(1000);
+            
             ContagemRegressiva(valor - 1);
         }
     }
