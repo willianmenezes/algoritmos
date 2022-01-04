@@ -4,8 +4,8 @@
     {
         public static void Executar()
         {
-            var soma = Soma(new int[] { 1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3 });
-            Console.WriteLine(soma);
+            var quantidade = QuantidadeDeItens(new int[] { 1, 2, 3 });
+            Console.WriteLine(quantidade);
         }
 
         private static int Fatorial(int x)
@@ -28,9 +28,16 @@
 
         private static int Soma(IEnumerable<int> numeros)
         {
-            if (numeros.Count() == 0) return 0;
+            if (!numeros.Any()) return 0;
 
             return numeros.First() + Soma(numeros.Skip(1));
+        }
+
+        private static int QuantidadeDeItens<T>(IEnumerable<T> lista)
+        {
+            if (!lista.Any()) return 0;
+
+            return 1 + QuantidadeDeItens(lista.Skip(1));
         }
     }
 }
