@@ -26,11 +26,11 @@
             ContagemRegressiva(valor - 1);
         }
 
-        private static int Soma(int[] numeros)
+        private static int Soma(IEnumerable<int> numeros)
         {
-            if (numeros.Length == 0) return 0;
+            if (numeros.Count() == 0) return 0;
 
-            return numeros[0] + Soma(numeros.Skip(1).ToArray());
+            return numeros.First() + Soma(numeros.Skip(1));
         }
     }
 }
