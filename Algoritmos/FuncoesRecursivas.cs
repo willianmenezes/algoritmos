@@ -4,14 +4,8 @@
     {
         public static void Executar()
         {
-            var numeroParaSerCalculado = int.Parse(Console.ReadLine() ?? "0");
-
-            Console.WriteLine($"Fatorial de {numeroParaSerCalculado} eh:  {Fatorial(numeroParaSerCalculado)}");
-
-            Console.WriteLine();
-            Console.WriteLine("Iniciando a funcao de contagem regressiva.");
-
-            ContagemRegressiva(10);
+            var soma = Soma(new int[] { 1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3 });
+            Console.WriteLine(soma);
         }
 
         private static int Fatorial(int x)
@@ -28,8 +22,15 @@
                 return;
 
             Thread.Sleep(1000);
-            
+
             ContagemRegressiva(valor - 1);
+        }
+
+        private static int Soma(int[] numeros)
+        {
+            if (numeros.Length == 0) return 0;
+
+            return numeros[0] + Soma(numeros.Skip(1).ToArray());
         }
     }
 }

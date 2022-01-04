@@ -7,7 +7,7 @@
             var arrayDeNumerosOrdenados = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             var numeroEscolhido = 5;
 
-            var resultado = EncontrarElemento(arrayDeNumerosOrdenados, numeroEscolhido);
+            var resultado = BuscaBinaria(arrayDeNumerosOrdenados, numeroEscolhido);
 
             if (resultado >= 0)
                 Console.WriteLine($"O item esta na posicao {resultado}");
@@ -15,7 +15,8 @@
                 Console.WriteLine("Item nao encontrato");
         }
 
-        private static int EncontrarElemento(int[] arrayDeNumerosOrdenados, int numeroEscolhido)
+        // O log(n)
+        private static int BuscaBinaria(int[] arrayDeNumerosOrdenados, int numeroEscolhido)
         {
             var menor = 0;
             var maior = arrayDeNumerosOrdenados.Length - 1;
