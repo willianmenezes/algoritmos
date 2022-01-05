@@ -4,8 +4,12 @@
     {
         public static void Executar()
         {
-            var quantidade = MaiorValor(new int[] { 25, 1, 3, 10, 15 });
-            Console.WriteLine(quantidade);
+            var quantidade = QuickShort(new int[] { 25, 15, 3, 10, 1 });
+
+            foreach (var item in quantidade)
+            {
+                Console.WriteLine(item);
+            }
         }
 
         private static int Fatorial(int x)
@@ -51,6 +55,27 @@
             var maior = MaiorValor(lista.Skip(1));
 
             return maior > primeiro ? maior : primeiro;
+        }
+
+        private static IEnumerable<int> QuickShort(IEnumerable<int> lista)
+        {
+            if (lista.Count() < 2) return lista;
+
+            var pivo = lista.First();
+
+            var menoresQuePivo = new List<int>();
+            var maioresQuePivo = new List<int>();
+
+            foreach (var item in lista.Skip(1))
+            {
+                if (item <= pivo)
+                    menoresQuePivo.Add(item);
+
+                if (item > pivo)
+                    maioresQuePivo.Add(item);
+            }
+
+            return QuickShort(menoresQuePivo).Concat(new List<int>() { pivo }).Concat(QuickShort(maioresQuePivo));
         }
     }
 }
